@@ -1,10 +1,10 @@
 import ValidationMsg from './ValidationMsg';
 
-const SpeciesName = () => {
+const SpeciesName = ({speciesName, onChangeSpeciesName}) => {
     return (
-        <section>
+        <section class="form-field">
             <label for='speciesName'>Species Name : </label>
-            <input id='speciesName' type='text' />
+            <input id='speciesName' type='text' value={speciesName} onChange={onChangeSpeciesName}/>
             <ValidationMsg />
         </section>
     );

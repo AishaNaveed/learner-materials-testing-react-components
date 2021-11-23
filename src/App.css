@@ -17,7 +17,29 @@ body {
 }
 
 .fields{
-	max-width: 70%;
-  	margin: 2% auto;
-  	padding: 1em;
+	width: 80%;
+	background-color: white;
+	margin: auto;
+	padding: 1em;
+	box-shadow: 0 0 1em 0 lightgray;
+}
+
+.form-field{
+	display:inline;
+	/*flex-direction:row;
+	justify-content:left; */
+	
+	padding: 0.5em;
+	font-size: medium;
+	border: 0;
+	font-family:sans-serif;
+}
+input{
+	background-color: lightgrey;
+}
+button{
+	background-color: olivedrab;
+	color: white;
+	cursor: pointer;
+	font-size: large;
 }

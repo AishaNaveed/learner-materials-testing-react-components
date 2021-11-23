@@ -1,12 +1,12 @@
 import ValidationMsg from './ValidationMsg';
 
-const WhatIs = () => {
+const WhatIs = ({whatIs, onChangeWhatIs}) => {
     return (
-        <section>
+        <section class="form-field">
             <label for='whatIs'>What is 2 + 2 : </label>
             <select name="solution" id="solutionList">
-                <option value="Not 4">Not 4</option>
-                <option value="4">4</option>
+                <option value={whatIs} onChange={onChangeWhatIs}>Not 4</option>
+                <option value={whatIs} onChange={onChangeWhatIs}>4</option>
             </select>
             <ValidationMsg />
         </section>
