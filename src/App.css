@@ -10,3 +10,14 @@ body {
 	justify-content: center;
 	margin: 0;
 }
+
+.validationMsg{
+	color: red;
+	margin-left: 7em;
+}
+
+.fields{
+	max-width: 70%;
+  	margin: 2% auto;
+  	padding: 1em;
+}
