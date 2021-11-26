@@ -12,7 +12,7 @@ body {
 }
 
 .validationMsg{
-	color: red;
+	color: crimson;
 	margin-left: 7em;
 }
 
@@ -24,22 +24,25 @@ body {
 	box-shadow: 0 0 1em 0 lightgray;
 }
 
-.form-field{
-	display:inline;
-	/*flex-direction:row;
-	justify-content:left; */
-	
-	padding: 0.5em;
-	font-size: medium;
-	border: 0;
-	font-family:sans-serif;
+.form-Field{
+	max-width: 90%;
+	margin: 0 auto;
+	text-align:justify;
 }
-input{
-	background-color: lightgrey;
+
+.form-Field input .form-Field textarea .form-Field select{
+	width:100%;
+	padding: 0.5em 1em;
+	margin: 1em 0;
+	border: 0.1em solid #ddd;
+	box-sizing: border-box;
+	display: block;
 }
+
 button{
-	background-color: olivedrab;
+	background-color: crimson;
 	color: white;
 	cursor: pointer;
-	font-size: large;
+	border-radius: 0.5em;
+	padding: 0.5em;
 }

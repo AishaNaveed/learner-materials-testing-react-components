@@ -1,13 +1,12 @@
-import ValidationMsg from './ValidationMsg';
+// import ValidationMsg from './ValidationMsg';
 
 const NumberOfBeings = ({numOfBeings, onChangeNumOfBeing}) => {
     return (
         <>
-            <section class="form-field">
-                <label for='numOfBeings'>Number of Beings : </label>
+                <label htmlFor='numOfBeings'>Number of Beings : </label>
                 <input id='numOfBeingsInput' type='text' value={numOfBeings} onChange={onChangeNumOfBeing}/>
-                <ValidationMsg />          
-            </section>
+                <br/><br/>
+                {/* <ValidationMsg />           */}
         </>
     );
 }

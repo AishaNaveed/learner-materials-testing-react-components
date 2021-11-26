@@ -1,12 +1,13 @@
-import ValidationMsg from './ValidationMsg';
+// import ValidationMsg from './ValidationMsg';
 
 const SpeciesName = ({speciesName, onChangeSpeciesName}) => {
     return (
-        <section class="form-field">
-            <label for='speciesName'>Species Name : </label>
+        <>
+            <label htmlFor='speciesName'>Species Name : </label>
             <input id='speciesName' type='text' value={speciesName} onChange={onChangeSpeciesName}/>
-            <ValidationMsg />
-        </section>
+            <br/><br/>
+            {/* <ValidationMsg /> */}
+        </>
     );
 }
 
