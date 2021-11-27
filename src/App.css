@@ -11,18 +11,28 @@ body {
 	margin: 0;
 }
 
+.formData{
+	width: 80%;
+	line-height: 2em;
+	color: green;
+	margin: 0 auto;
+	text-align:center;
+	font-weight: 600;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
 .validationMsg{
 	color: crimson;
 	margin-left: 7em;
 }
 
-.fields{
+/* .fields{
 	width: 80%;
 	background-color: white;
 	margin: auto;
 	padding: 1em;
 	box-shadow: 0 0 1em 0 lightgray;
-}
+} */
 
 .form-Field{
 	max-width: 90%;
