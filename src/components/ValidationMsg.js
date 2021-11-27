@@ -1,13 +1,13 @@
-const ValidationMsg = () => {
+
+const ValidationMsg = ({ValidMsg}) => {
     return (
         <>
-            <p class="validationMsg">validation messages</p>
-            {/* <div data-testid="idErrorMessage">
-                <p>{errorMessage}</p>
-            </div> */}
+            <div data-testid="validationMsg">
+                <p>{ValidMsg}</p>
+            </div>
         </>
     );
 }
 
-export default ValidationMsg;
 
+export default ValidationMsg;
