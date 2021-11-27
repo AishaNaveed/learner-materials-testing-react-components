@@ -1,5 +1,5 @@
 import { useState } from 'react';
-//  import ValidationMsg from './ValidationMsg';
+import ValidationMsg from './ValidationMsg';
 
  const ErrorMsgFunc = (value, id) => {
     if (id === 'speciesName') {
@@ -7,13 +7,10 @@ import { useState } from 'react';
             return `Species Name is required`;
         }
         if (/[^a-zA-Z -]/.test(value)) {
-            return 'Invalid characters';
+            return 'Please input valid characters';
         }
-        if (value.trim().length < 3) {
-            return `Species Name needs to be at least three characters`;
-        }
-        if (value.trim().length > 23) {
-            return `Species Name needs to be less than twenty three characters`;
+        if (value.trim().length <= 3 || value.trim().length >= 23) {
+            return `Species Name length should be minimum 3 characters and maximum 23 characters`;
         }
     }
 };
@@ -33,10 +30,10 @@ const SpeciesName = ({ speciesName, onChangeSpeciesName }) => {
                     onChangeSpeciesName(e);
                 }} />
             <br /><br />
-            <div data-testid="validationMsg">
+            {/* <div data-testid="validationMsg">
                 <p>{validMsg}</p>
-            </div>
-            {/* <ValidationMsg ValidMsg={validMsg}/> */}
+            </div> */}
+            <ValidationMsg ValidMsg={validMsg}/>
         </>
     );
 }

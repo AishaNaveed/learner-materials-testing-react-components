@@ -1,4 +1,3 @@
-
 const ValidationMsg = ({ValidMsg}) => {
     return (
         <>
@@ -8,6 +7,5 @@ const ValidationMsg = ({ValidMsg}) => {
         </>
     );
 }
-
 
 export default ValidationMsg;
