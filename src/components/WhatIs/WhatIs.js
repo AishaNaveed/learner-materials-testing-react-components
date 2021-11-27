@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ValidationMsg from './ValidationMsg';
+import ValidationMsg from '../ValidationMsg';
 
 const ErrorMsgFunc = (value, id) => {
     if (id === 'whatIs') {
@@ -26,10 +26,6 @@ const WhatIs = ({ whatIs, onChangeWhatIs }) => {
                 <option value={whatIs} onChange={onChangeWhatIs}>Not 4</option>
                 <option value={whatIs} onChange={onChangeWhatIs}>4</option>
             </select>
-            <br /><br />
-            {/* <div data-testid="validationMsg">
-                <p>{validMsg}</p>
-            </div> */}
             <ValidationMsg ValidMsg={validMsg}/>
         </>
     );

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ValidationMsg from './ValidationMsg';
+import ValidationMsg from '../ValidationMsg';
 
  const ErrorMsgFunc = (value, id) => {
     if (id === 'speciesName') {
@@ -20,19 +20,16 @@ const SpeciesName = ({ speciesName, onChangeSpeciesName }) => {
     return (
         <>
             <label htmlFor='speciesName'>Species Name : </label>
-            <input data-testid='speciesName'
+            <input id='speciesName'
                 placeholder="Add species name..."
+                size="25"
                 type='text'
                 value={speciesName}
                 onChange={(e) => {
-                    const errorMsg = ErrorMsgFunc(e.target.value, e.target.data-testid);
+                    const errorMsg = ErrorMsgFunc(e.target.value, e.target.id);
                     setValidMsg(errorMsg);
                     onChangeSpeciesName(e);
                 }} />
-            <br /><br />
-            {/* <div data-testid="validationMsg">
-                <p>{validMsg}</p>
-            </div> */}
             <ValidationMsg ValidMsg={validMsg}/>
         </>
     );

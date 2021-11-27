@@ -1,9 +1,7 @@
 const ValidationMsg = ({ValidMsg}) => {
     return (
         <>
-            <div data-testid="validationMsg">
-                <p>{ValidMsg}</p>
-            </div>
+                <p data-testid="validationMsg" className="msgColor">{ValidMsg}</p>
         </>
     );
 }
